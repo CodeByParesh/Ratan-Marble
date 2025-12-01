@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+<title>Ratan Marble</title>
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:Header */
+.site-header {
+    background-color: var(--color-light);
+    padding: 14px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.site-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+.site-header__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+}
+.site-header__logo-img {
+    width: 36px;
+    height: 47px;
+}
+.site-header__logo-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--color-dark);
+}
+.site-header__nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.site-header__nav-link {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--color-text-muted);
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 8px;
+}
+.site-header__nav-link--active {
+    color: var(--color-dark);
+}
+.site-header__nav-underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+}
+.site-header__nav-link:not(.site-header__nav-link--active) .site-header__nav-underline {
+    display: none;
+}
+@media (max-width: 768px) {
+    .site-header__container {
+        padding: 0 20px;
+    }
+    .site-header__nav {
+        display: none;
+    }
+}
+
+/* CSS for section section:Hero */
+.hero-section {
+    background: linear-gradient(135deg, #f5f5f7 0%, #f4f5f9 142.67%);
+    padding-top: 73px;
+    padding-bottom: 73px;
+}
+.hero-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-section__image-wrapper {
+    position: relative;
+    width: 1179px;
+    height: 699px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.hero-section__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-section__image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+}
+.hero-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-top: 58px;
+}
+.hero-section__title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 70px;
+    letter-spacing: -1.22px;
+    text-align: center;
+    color: var(--color-dark);
+    max-width: 816px;
+}
+.hero-section__subtitle {
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: var(--color-dark);
+    max-width: 678px;
+    margin-top: 10px;
+}
+.hero-section__actions {
+    display: flex;
+    gap: 32px;
+    margin-top: 26px;
+}
+
+@media (max-width: 1200px) {
+    .hero-section__image-wrapper {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .hero-section__title {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+    .hero-section__subtitle {
+        font-size: 14px;
+    }
+    .hero-section__actions {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        align-items: center;
+    }
+    .hero-section__actions .btn {
+        width: 80%;
+    }
+}
+
+/* CSS for section section:Heritage */
+.heritage-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+}
+.heritage-section__bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 85px;
+}
+.heritage-section__bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.heritage-section__bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.6);
+}
+.heritage-section__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+.heritage-section__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    max-width: 824px;
+}
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+}
+.timeline__line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: var(--color-light);
+    transform: translateX(-50%);
+}
+.timeline__item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    margin-bottom: 50px;
+}
+.timeline__item--left {
+    left: 0;
+    text-align: right;
+}
+.timeline__item--right {
+    left: 50%;
+    text-align: left;
+}
+.timeline__dot {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 9px;
+    height: 9px;
+    background-color: var(--color-light);
+    border: 2px solid var(--color-light);
+    border-radius: 50%;
+}
+.timeline__item--left .timeline__dot {
+    right: -4.5px;
+}
+.timeline__item--right .timeline__dot {
+    left: -4.5px;
+}
+.timeline__card {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+}
+.timeline__card-header {
+    margin-bottom: 8px;
+}
+.timeline__year {
+    font-size: 61px;
+    line-height: 1;
+    letter-spacing: -0.61px;
+    color: var(--color-dark);
+}
+.timeline__event {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-dark);
+}
+.timeline__description {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(58, 58, 58, 0.75);
+}
+@media (max-width: 768px) {
+    .timeline__line {
+        left: 20px;
+    }
+    .timeline__item, .timeline__item--right {
+        width: 100%;
+        left: 0;
+        padding-left: 60px;
+        padding-right: 20px;
+        text-align: left;
+    }
+    .timeline__item--left .timeline__dot, .timeline__item--right .timeline__dot {
+        left: 15.5px;
+    }
+    .timeline__item--left {
+        text-align: left;
+    }
+}
+
+/* CSS for section section:WhyChooseUs */
+.why-choose-us-section {
+    padding-top: 132px;
+    padding-bottom: 132px;
+}
+.why-choose-us-section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+.feature-card {
+    position: relative;
+    padding: 32px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    overflow: hidden;
+}
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/4903f689e0eb6bb571627dfdaf1a3539a820bef0.png');
+    background-size: cover;
+    z-index: -2;
+}
+.feature-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 0.8px solid #e0e0e0;
+    box-shadow: inset 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    z-index: -1;
+}
+.feature-card__icon-wrapper {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 30px -10px rgba(43, 43, 43, 0.08);
+}
+.feature-card__icon-wrapper img {
+    width: 32px;
+    height: 32px;
+}
+.feature-card__title {
+    font-size: 25px;
+    line-height: 32px;
+    color: var(--color-dark);
+}
+.feature-card__description {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-dark);
+}
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CSS for section section:SignatureCollection */
+.signature-collection-section {
+    padding: 128px 0;
+}
+.signature-collection-section__container {
+    display: flex;
+    align-items: center;
+    gap: 82px;
+}
+.signature-collection-section__image-wrapper {
+    flex-shrink: 0;
+    width: 550px;
+    height: 700px;
+}
+.signature-collection-section__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 0.8px solid var(--color-primary);
+}
+.signature-collection-section__content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.signature-collection-section__header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.signature-collection-section__tagline {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1.44px;
+    color: var(--color-primary);
+}
+.signature-collection-section__title {
+    font-size: 39px;
+    line-height: 48px;
+    letter-spacing: -0.39px;
+}
+.signature-collection-section__description {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 342px;
+}
+.signature-collection-section__filters {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.filter-header {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+}
+.filter-icon {
+    width: 24px;
+    height: 24px;
+}
+.filter-buttons {
+    display: flex;
+    gap: 16px;
+}
+.filter-btn {
+    padding: 4px 30px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0.8px solid #c3c3c3;
+    color: var(--color-dark);
+}
+.filter-btn--active {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border-color: var(--color-primary);
+}
+.signature-collection-section__applications {
+    display: flex;
+    flex-direction: column;
+}
+.applications-title {
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.applications-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.applications-list li {
+    font-size: 14px;
+    line-height: 2;
+    color: var(--color-dark);
+}
+.signature-collection-section__cta {
+    align-self: flex-start;
+    width: 100%;
+}
+@media (max-width: 1024px) {
+    .signature-collection-section__container {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .signature-collection-section__image-wrapper {
+        width: 100%;
+        height: 400px;
+    }
+    .signature-collection-section__content {
+        align-items: center;
+        text-align: center;
+    }
+    .signature-collection-section__description {
+        max-width: 100%;
+    }
+    .signature-collection-section__cta {
+        width: auto;
+    }
+}
+
+/* CSS for section section:CallToAction1 */
+.cta-section {
+    position: relative;
+    padding: 64px 0;
+    text-align: center;
+}
+.cta-section__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.cta-section--1 .cta-section__bg {
+    background-image: url('images/f6273b3b26c67d716db53c020871886ec867f22b.png');
+    background-size: cover;
+    background-position: center;
+}
+.cta-section--1 .cta-section__bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.cta-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.cta-section__title {
+    font-size: 39px;
+    line-height: 48px;
+    letter-spacing: -0.39px;
+    color: var(--color-dark);
+}
+.cta-section__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-dark);
+    max-width: 558px;
+    margin-top: -24px;
+}
+.cta-section__actions {
+    display: flex;
+    gap: 32px;
+}
+@media (max-width: 768px) {
+    .cta-section__title {
+        font-size: 32px;
+    }
+    .cta-section__actions {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+/* CSS for section section:Stats */
+.stats-section {
+    padding: 60px 0;
+}
+.stats-section__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 0 40px;
+}
+.stat-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 104px;
+    width: 1px;
+    background-color: #e0e0e0;
+}
+.stat-item__number {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 61px;
+    line-height: 80px;
+    color: var(--color-primary);
+}
+.stat-item__label {
+    font-size: 14px;
+    letter-spacing: 0.42px;
+    color: var(--color-dark);
+}
+@media (max-width: 1024px) {
+    .stats-section__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    .stat-item {
+        padding: 0;
+    }
+    .stat-item:not(:last-child)::after {
+        display: none;
+    }
+    .stat-item:nth-child(odd)::after {
+        content: '';
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 80px;
+        width: 1px;
+        background-color: #e0e0e0;
+    }
+}
+@media (max-width: 768px) {
+    .stats-section__container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .stat-item:nth-child(odd)::after {
+        display: none;
+    }
+    .stat-item:not(:last-child) {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+}
+
+/* CSS for section section:Presence */
+.presence-section {
+    padding-bottom: 120px;
+}
+.accordion {
+    max-width: 1022px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.accordion__item {
+    border: 1px solid #ededed;
+    background-color: var(--color-light);
+}
+.accordion__item:first-of-type {
+    border-radius: 8px 8px 0 0;
+}
+.accordion__item:last-of-type {
+    border-radius: 0 0 8px 8px;
+}
+.accordion__item:not(:first-of-type) {
+    border-top: none;
+}
+.accordion__item[open] .accordion__summary {
+    border-bottom: 1px solid #ededed;
+}
+.accordion__item[open] .accordion__toggle-icon {
+    transform: rotate(180deg);
+}
+.accordion__summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 32px;
+    cursor: pointer;
+    list-style: none;
+}
+.accordion__summary::-webkit-details-marker {
+    display: none;
+}
+.accordion__summary-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.accordion__title {
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.accordion__location {
+    font-size: 14px;
+    color: rgba(58, 58, 58, 0.9);
+}
+.accordion__toggle-icon {
+    transition: transform 0.3s ease;
+}
+.accordion__details {
+    padding: 32px;
+    display: flex;
+    gap: 32px;
+    background: linear-gradient(20deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 2.07%, rgba(0, 0, 0, 0.02) 2.07%, rgba(0, 0, 0, 0.02) 4.14%), rgba(255, 255, 255, 0.95);
+}
+.accordion__details-image-wrapper {
+    flex: 1;
+    max-width: 463px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.accordion__details-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.accordion__details-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.info-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #19418f;
+}
+.info-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3b3b3b;
+}
+.accordion__actions {
+    margin-top: auto;
+    display: flex;
+    gap: 12px;
+}
+.accordion-btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.accordion-btn--primary {
+    background-color: #14438f;
+    color: var(--color-light);
+}
+.accordion-btn--secondary {
+    background-color: var(--color-light);
+    color: #14438f;
+    border: 1px solid #14438f;
+}
+@media (max-width: 768px) {
+    .accordion__details {
+        flex-direction: column;
+    }
+    .accordion__title {
+        font-size: 20px;
+    }
+}
+
+/* CSS for section section:Testimonials */
+.testimonials-section {
+    padding-bottom: 100px;
+}
+.testimonials-grid {
+    display: flex;
+    gap: 32px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scrollbar-width: none; /* Firefox */
+}
+.testimonials-grid::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+.testimonial-card {
+    position: relative;
+    flex: 0 0 490px;
+    padding: 32px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden;
+}
+.testimonial-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/21d8f8e887ab587134bea982e899920a372dd3aa.png');
+    background-size: cover;
+    z-index: -2;
+}
+.testimonial-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 0.8px solid #e0e0e0;
+    box-shadow: inset 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    z-index: -1;
+}
+.testimonial-card__stars {
+    display: flex;
+    gap: 0;
+}
+.testimonial-card__stars img {
+    width: 31px;
+    height: 31px;
+    color: var(--color-primary);
+}
+.testimonial-card__text {
+    font-size: 16px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+.testimonial-card__author {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 16px;
+}
+.author-name {
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.author-location {
+    font-size: 14px;
+    line-height: 24px;
+}
+.testimonials-nav {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1024px) {
+    .testimonials-grid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .testimonial-card {
+        flex: 0 0 80%;
+        max-width: 400px;
+    }
+}
+
+/* CSS for section section:Quote */
+.quote-section {
+    position: relative;
+    padding: 32px 0;
+    text-align: center;
+}
+.quote-section__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.quote-section__bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/213e02d46d976d0d24afdf68f219f57cc3311e3e.png');
+    background-size: cover;
+    background-position: center;
+}
+.quote-section__bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.quote-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.quote-section__text {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 48px;
+    letter-spacing: -0.39px;
+    color: var(--color-dark);
+    max-width: 1254px;
+}
+.quote-section__author {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--color-dark);
+}
+@media (max-width: 768px) {
+    .quote-section__text {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+}
+
+/* CSS for section section:FAQ */
+.faq-section {
+    background-color: rgba(250, 250, 250, 0.2);
+}
+.faq-accordion {
+    max-width: 896px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.faq-item {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.faq-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/4903f689e0eb6bb571627dfdaf1a3539a820bef0.png');
+    background-size: cover;
+    z-index: -2;
+}
+.faq-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: inset 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    z-index: -1;
+}
+.faq-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--color-dark);
+}
+.faq-summary::-webkit-details-marker {
+    display: none;
+}
+.faq-toggle-icon {
+    transition: transform 0.3s ease;
+}
+.faq-item[open] > .faq-summary .faq-toggle-icon {
+    transform: rotate(180deg);
+}
+.faq-content {
+    padding: 0 32px 24px 32px;
+    color: #3b3b3b;
+    font-size: 16px;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    .faq-summary {
+        font-size: 18px;
+        padding: 16px 24px;
+    }
+    .faq-content {
+        padding: 0 24px 16px 24px;
+        font-size: 14px;
+    }
+}
+
+/* CSS for section section:CallToAction2 */
+.cta-section--2 {
+    padding: 64px 0;
+}
+.cta-section--2 .cta-section__bg {
+    background-image: url('images/3703ee2991f7b946d5c3c7e46975f14ca4140ce1.png');
+    background-size: cover;
+    background-position: center;
+}
+.cta-section--2 .cta-section__bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.45);
+}
+.cta-section--2 .cta-section__title {
+    color: var(--color-light);
+}
+.cta-section--2 .cta-section__description {
+    color: var(--color-light);
+}
+.cta-section--2 .btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border-radius: 10px;
+}
+
+/* CSS for section section:Contact */
+.contact-section {
+    padding-bottom: 120px;
+}
+.contact-layout {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    max-width: 1264px;
+    margin: 0 auto;
+}
+.contact-map {
+    flex: 1;
+    background-color: var(--color-light);
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.contact-map img {
+    width: 100%;
+    display: block;
+}
+.contact-form {
+    flex: 1;
+    background-color: var(--color-light);
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 11px 16px;
+    border-radius: 10px;
+    border: 1px solid #e6e6e6;
+    font-family: var(--font-body);
+    font-size: 14px;
+    color: rgba(58, 58, 58, 0.5);
+}
+.form-group textarea {
+    resize: vertical;
+}
+.select-wrapper {
+    position: relative;
+}
+.select-wrapper select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.select-arrow {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+.form-submit-btn {
+    width: 100%;
+    padding: 10px 32px;
+    border-radius: 10px;
+}
+@media (max-width: 1024px) {
+    .contact-layout {
+        flex-direction: column;
+    }
+}
+
+/* CSS for section section:Footer */
+.site-footer-main {
+    padding: 80px 0;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.footer-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 39px;
+    color: var(--color-dark);
+}
+.footer-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: rgba(58, 58, 58, 0.8);
+}
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+.footer-socials img {
+    width: 24px;
+    height: 24px;
+}
+.footer-bottom {
+    width: 100%;
+    max-width: 650px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: rgba(58, 58, 58, 0.8);
+}
+.footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+    .footer-legal {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .footer-legal span {
+        display: none;
+    }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+    <div class="site-header__container">
+        <a href="#" class="site-header__logo">
+            <img src="images/a80a028de629e57785a67101ee4813eed5070f7a.png" alt="Ratan Marbe Logo" class="site-header__logo-img">
+            <span class="site-header__logo-text">Ratan Marble</span>
+        </a>
+        <nav class="site-header__nav">
+            <a href="#home" class="site-header__nav-link site-header__nav-link--active">
+                Home
+                <img src="images/I646_363_28_41.svg" alt="" class="site-header__nav-underline">
+            </a>
+            <a href="#collections" class="site-header__nav-link">Collections</a>
+            <a href="#about" class="site-header__nav-link">About Us</a>
+        </nav>
+        <a href="#contact" class="btn btn-primary site-header__cta">Contact Us</a>
+    </div>
+</header>
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="hero-section__image-wrapper">
+            <img src="images/0065c5b2f382dc87fd9eb973b74081fa52c05378.png" alt="Stone Collection" class="hero-section__image">
+            <div class="hero-section__image-overlay"></div>
+        </div>
+        <div class="hero-section__content">
+            <h1 class="hero-section__title">Premium Granite And Quartzite, Trusted Since 1997</h1>
+            <p class="hero-section__subtitle">Over 20 years of expertise, imported marble, exotic quartzite, and custom stone solutions for every project.</p>
+            <div class="hero-section__actions">
+                <a href="#collections" class="btn btn-primary">Explore Collections</a>
+                <a href="#showrooms" class="btn btn-secondary">Visit Showroom</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="about" class="heritage-section">
+    <div class="heritage-section__bg-container">
+        <!-- merged image -->
+        <img src="images/3e783eb8a297dcd3c76648b03471caccaa2b7dca.png" alt="Quarry background" class="heritage-section__bg-image">
+        <div class="heritage-section__bg-overlay"></div>
+    </div>
+    <div class="container heritage-section__content">
+        <div class="heritage-section__header">
+            <span class="section-subtitle section-subtitle--light">Our Heritage</span>
+            <h2 class="section-title" style="color: var(--color-light);">Two Decades Of Crafted Excellence</h2>
+            <p class="section-description" style="color: var(--color-light);">From a single showroom to three specialized branches, our story is carved in stone — literally. Each milestone represents our commitment to quality, trust, and timeless beauty.</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline__line"></div>
+            <div class="timeline__item timeline__item--left">
+                <div class="timeline__card">
+                    <div class="timeline__card-header">
+                        <h3 class="timeline__year">1997</h3>
+                        <p class="timeline__event">Ratan Marble founded</p>
+                    </div>
+                    <p class="timeline__description">Ratan Marble was established with a single showroom, offering premium quality granite and marble.</p>
+                </div>
+                <div class="timeline__dot"></div>
+            </div>
+            <div class="timeline__item timeline__item--right">
+                <div class="timeline__card">
+                    <div class="timeline__card-header">
+                        <h3 class="timeline__year">2008</h3>
+                        <p class="timeline__event">Shree Ram Granite</p>
+                    </div>
+                    <p class="timeline__description">Opened two specialized branches, making our heritage and craftsmanship more accessible.</p>
+                </div>
+                <div class="timeline__dot"></div>
+            </div>
+            <div class="timeline__item timeline__item--left">
+                <div class="timeline__card">
+                    <div class="timeline__card-header">
+                        <h3 class="timeline__year">2014</h3>
+                        <p class="timeline__event">Ratan Marble founded</p>
+                    </div>
+                    <p class="timeline__description">Ratan Marble was established with a single showroom, offering premium quality granite and marble.</p>
+                </div>
+                <div class="timeline__dot"></div>
+            </div>
+            <div class="timeline__item timeline__item--right">
+                <div class="timeline__card">
+                    <div class="timeline__card-header">
+                        <h3 class="timeline__year">2025</h3>
+                        <p class="timeline__event">Future Expanding</p>
+                    </div>
+                    <p class="timeline__description">Stepping into the future with a premium online presence, showcasing timeless beauty worldwide.</p>
+                </div>
+                <div class="timeline__dot"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="why-choose-us-section">
+    <div class="container">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+            <span class="section-subtitle section-subtitle--dark">Why Choose Us</span>
+            <h2 class="section-title">Why Families And Architects Trust Us</h2>
+            <p class="section-description">"For over two decades, we’ve been delivering premium Granite, Imported Marble, and Exotic Quartzite with unmatched craftsmanship and trust."</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-card__icon-wrapper">
+                    <img src="images/646_445.svg" alt="Architects Choice Icon">
+                </div>
+                <h3 class="feature-card__title">Architects And Interior Choice</h3>
+                <p class="feature-card__description">The preferred choice for architects and designers , delivering a premium selection for projects of any scale.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card__icon-wrapper">
+                    <img src="images/646_460.svg" alt="Wide Range Icon">
+                </div>
+                <h3 class="feature-card__title">Wide Range Of Premium Stones</h3>
+                <p class="feature-card__description">Choose from Granite, Imported Marble, and Exotic Quartzite — curated for elegance and durability.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card__icon-wrapper">
+                    <img src="images/646_472.svg" alt="Trusted Since 1997 Icon">
+                </div>
+                <h3 class="feature-card__title">Trusted Since 1997</h3>
+                <p class="feature-card__description">Over 28 years of trusted service, delivering premium quality and craftsmanship for every project.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card__icon-wrapper">
+                    <img src="images/646_484.svg" alt="Custom Finishing Icon">
+                </div>
+                <h3 class="feature-card__title">Custom Finishing And Polishing</h3>
+                <p class="feature-card__description">Tailored cutting, polishing, and edge finishing services to ensure your stone fits perfectly into your project.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card__icon-wrapper">
+                    <img src="images/646_495.svg" alt="Exotic Collection Icon">
+                </div>
+                <h3 class="feature-card__title">Imported And Exotic Collection</h3>
+                <p class="feature-card__description">Sourced from the finest quarries worldwide, our collections offer unparalleled beauty, quality, and exclusivity.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-card__icon-wrapper">
+                    <img src="images/646_506.svg" alt="Customer Service Icon">
+                </div>
+                <h3 class="feature-card__title">Customer-Centric Service</h3>
+                <p class="feature-card__description">A personalized experience from initial selection to timely and safe delivery, ensuring your project's success.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="collections" class="signature-collection-section">
+    <div class="container signature-collection-section__container">
+        <div class="signature-collection-section__image-wrapper">
+            <img src="images/21d8f8e887ab587134bea982e899920a372dd3aa.png" alt="Signature Collection Marble" class="signature-collection-section__image">
+        </div>
+        <div class="signature-collection-section__content">
+            <div class="signature-collection-section__header">
+                <p class="signature-collection-section__tagline">Signature Collection</p>
+                <h2 class="signature-collection-section__title">Stone is Our Language</h2>
+                <p class="signature-collection-section__description">More than material, our stone tells a story of nature's art refined by three generations of expertise.</p>
+            </div>
+            <div class="signature-collection-section__filters">
+                <div class="filter-header">
+                    <img src="images/646_524.svg" alt="Filter icon" class="filter-icon">
+                    <span>Filter by:</span>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn filter-btn--active">Granite</button>
+                    <button class="filter-btn">Quartzite</button>
+                    <button class="filter-btn">Premium</button>
+                </div>
+            </div>
+            <div class="signature-collection-section__applications">
+                <h3 class="applications-title">Perfect Applications:</h3>
+                <ul class="applications-list">
+                    <li>+ Counter top</li>
+                    <li>+ Luxury Halls</li>
+                    <li>+ Staircases</li>
+                </ul>
+            </div>
+            <a href="#" class="btn btn-primary signature-collection-section__cta">View Full Collections</a>
+        </div>
+    </div>
+</section>
+<section class="cta-section cta-section--1">
+    <div class="cta-section__bg">
+        <!-- merged image -->
+    </div>
+    <div class="container cta-section__container">
+        <h2 class="cta-section__title">Can't Find What You're Looking For?</h2>
+        <p class="cta-section__description">Explore marble, granite, quartzite, and exotic stones — crafted to match your vision.</p>
+        <div class="cta-section__actions">
+            <a href="#" class="btn btn-primary">Consult Our Experts</a>
+            <a href="#" class="btn btn-secondary">Visit Our Showroom</a>
+        </div>
+    </div>
+</section>
+<section class="stats-section">
+    <div class="container stats-section__container">
+        <div class="stat-item">
+            <span class="stat-item__number">28+</span>
+            <span class="stat-item__label">Years of Excellence</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-item__number">26K+</span>
+            <span class="stat-item__label">Happy Clients</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-item__number">3</span>
+            <span class="stat-item__label">Specialized Branches</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-item__number">120+</span>
+            <span class="stat-item__label">Marble Varieties</span>
+        </div>
+    </div>
+</section>
+<section id="showrooms" class="presence-section">
+    <div class="container">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px; margin-bottom: 64px;">
+            <span class="section-subtitle section-subtitle--dark">Our Presence</span>
+            <h2 class="section-title">Across Cities. Across Generations.</h2>
+            <p class="section-description" style="color: rgba(58, 58, 58, 0.7);">Each Ratan Marble branch is a family — led by real people, with real stories. Explore our spaces. Meet the experts. Find your perfect marble match.</p>
+        </div>
+        <div class="accordion">
+            <details class="accordion__item" open>
+                <summary class="accordion__summary">
+                    <div class="accordion__summary-content">
+                        <img src="images/646_590.svg" alt="Location icon">
+                        <div>
+                            <h3 class="accordion__title">Ratan Marble – Flagship Showroom</h3>
+                            <p class="accordion__location">Dahisar East</p>
+                        </div>
+                    </div>
+                    <img src="images/646_587.svg" alt="Toggle icon" class="accordion__toggle-icon">
+                </summary>
+                <div class="accordion__details">
+                    <div class="accordion__details-image-wrapper">
+                        <img src="images/0a860f3db9b3efe7327c1c862adb1debe8edc010.png" alt="Ratan Marble – Flagship Showroom exterior">
+                    </div>
+                    <div class="accordion__details-info">
+                        <div class="info-group">
+                            <p class="info-label">Address</p>
+                            <p class="info-text">Western Express Highway, Ganesh Nagar, Dahisar East, Mumbai (near McDonald’s, behind Ashokvan Naka).</p>
+                        </div>
+                        <div class="info-group">
+                            <p class="info-label">MANAGED BY</p>
+                            <p class="info-text">Sagar Kusumiwal, Gangaram Kusumiwal, Omparkesh Kusumiwal, Vishal Kusumiwal.</p>
+                        </div>
+                        <div class="info-group">
+                            <p class="info-label">TIMINGS</p>
+                            <p class="info-text">Mon - Sat: 9:00 AM - 7:00 PM, Sun: 10:00 AM - 5:00 PM</p>
+                        </div>
+                        <div class="info-group">
+                            <p class="info-label">CONTACT</p>
+                            <p class="info-text">Mr. Gangaram Kusumiwal - +91 9867100225</p>
+                            <p class="info-text">Mr. Omparkesh Kusumiwal - +91 9867179922</p>
+                        </div>
+                        <div class="accordion__actions">
+                            <a href="#" class="accordion-btn accordion-btn--primary">Call Branch</a>
+                            <a href="#" class="accordion-btn accordion-btn--secondary">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </details>
+            <details class="accordion__item">
+                <summary class="accordion__summary">
+                    <div class="accordion__summary-content">
+                        <img src="images/646_627.svg" alt="Location icon">
+                        <div>
+                            <h3 class="accordion__title">Sagar Marble And Granite</h3>
+                            <p class="accordion__location">Dahisar East</p>
+                        </div>
+                    </div>
+                    <img src="images/646_634.svg" alt="Toggle icon" class="accordion__toggle-icon">
+                </summary>
+                <div class="accordion__details">
+                    <p>Details for Sagar Marble And Granite.</p>
+                </div>
+            </details>
+            <details class="accordion__item">
+                <summary class="accordion__summary">
+                    <div class="accordion__summary-content">
+                        <img src="images/646_639.svg" alt="Location icon">
+                        <div>
+                            <h3 class="accordion__title">Shri Ram Granite Works</h3>
+                            <p class="accordion__location">Thane</p>
+                        </div>
+                    </div>
+                    <img src="images/646_646.svg" alt="Toggle icon" class="accordion__toggle-icon">
+                </summary>
+                <div class="accordion__details">
+                    <p>Details for Shri Ram Granite Works.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+<section class="testimonials-section">
+    <div class="container">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px; margin-bottom: 64px;">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-description">Trusted by architects, builders, and homeowners since 1997</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-card__stars">
+                    <img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star">
+                </div>
+                <p class="testimonial-card__text">I was looking for premium granite for my new kitchen and visited Ratan Marble. The collection was huge, and the staff patiently guided me in choosing the right slab. Prices were also reasonable compared to other shops. Very satisfied with the service.</p>
+                <div class="testimonial-card__author">
+                    <h4 class="author-name">Anita Mehta</h4>
+                    <p class="author-location">Mumbai</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-card__stars">
+                    <img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star">
+                </div>
+                <p class="testimonial-card__text">The team at Ratan Marble was incredibly patient, helping me find the perfect granite for my kitchen. The quality is outstanding, and their guidance made the entire process stress-free. The final result has completely transformed my home. Highly recommended!</p>
+                <div class="testimonial-card__author">
+                    <h4 class="author-name">Rajesh Shah</h4>
+                    <p class="author-location">Thane</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-card__stars">
+                    <img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star">
+                </div>
+                <p class="testimonial-card__text">The collection is huge! I had so many different options to choose from, far more than other shops. Finally found a unique quartzite slab that I couldn't find anywhere else in the city.</p>
+                <div class="testimonial-card__author">
+                    <h4 class="author-name">Gotam patel</h4>
+                    <p class="author-location">Dahisar</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonials-nav">
+            <img src="images/646_708.svg" alt="navigation dots">
+        </div>
+    </div>
+</section>
+<section class="quote-section">
+    <div class="quote-section__bg">
+        <!-- merged image -->
+    </div>
+    <div class="container">
+        <p class="quote-section__text">"Excellence is not just our standard—it's our legacy. Every piece of marble we select carries the promise of beauty that lasts generations."</p>
+        <p class="quote-section__author">— Ratan Marble Group Family</p>
+    </div>
+</section>
+<section class="faq-section">
+    <div class="container">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 8px; margin-bottom: 66px;">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-description">Here are answers to the most common queries from our customers. We're here to help you make the perfect choice for your project.</p>
+        </div>
+        <div class="faq-accordion">
+            <details class="faq-item" open>
+                <summary class="faq-summary">
+                    Do you provide polishing and custom cutting services?
+                    <img src="images/646_730.svg" alt="toggle icon" class="faq-toggle-icon">
+                </summary>
+                <div class="faq-content">
+                    <p>Absolutely. We offer polishing, edge finishing, and custom cutting as per your requirements to ensure the stone fits perfectly in your project.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-summary">
+                    What types of granite and marble do you offer?
+                    <img src="images/646_739.svg" alt="toggle icon" class="faq-toggle-icon">
+                </summary>
+                <div class="faq-content">
+                    <p>We offer a wide variety of both local and imported granite and marble, including exotic quartzite. Visit our collections page or showroom to see the full range.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-summary">
+                    Do you sell only in bulk, or can I buy small quantities too?
+                    <img src="images/646_746.svg" alt="toggle icon" class="faq-toggle-icon">
+                </summary>
+                <div class="faq-content">
+                    <p>We cater to all project sizes, from large-scale architectural projects to individual home renovations. You can purchase single slabs or in bulk.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-summary">
+                    Why should I choose Ratan Marble over others?
+                    <img src="images/646_753.svg" alt="toggle icon" class="faq-toggle-icon">
+                </summary>
+                <div class="faq-content">
+                    <p>With over 28 years of experience, a vast collection of premium stones, and a commitment to customer satisfaction, we provide unmatched quality and service.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-summary">
+                    Are your prices competitive?
+                    <img src="images/646_760.svg" alt="toggle icon" class="faq-toggle-icon">
+                </summary>
+                <div class="faq-content">
+                    <p>Yes, we pride ourselves on offering competitive pricing for premium quality stones by sourcing directly from quarries around the world.</p>
+                </div>
+            </details>
+            <details class="faq-item">
+                <summary class="faq-summary">
+                    How long does delivery take?
+                    <img src="images/646_767.svg" alt="toggle icon" class="faq-toggle-icon">
+                </summary>
+                <div class="faq-content">
+                    <p>Delivery times vary based on your location and the specifics of your order. We strive to provide timely and safe delivery for all our clients.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+<section class="cta-section cta-section--2">
+    <div class="cta-section__bg">
+        <!-- merged image -->
+    </div>
+    <div class="container cta-section__container">
+        <h2 class="cta-section__title" style="color: var(--color-light);">Didn't Find Your Answer?</h2>
+        <p class="cta-section__description" style="color: var(--color-light);">Our granite, marble & quartzite experts are here to guide you. Get the right stone for your project.</p>
+        <div class="cta-section__actions">
+            <a href="#" class="btn btn-primary" style="padding: 10px 32px;">Get Expert Guidance</a>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact-section">
+    <div class="container">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 4px; margin-bottom: 64px;">
+            <h2 class="section-title" style="font-size: 61px; color: var(--color-primary);">Visit Us at Our Showrooms</h2>
+            <p class="section-description" style="font-size: 18px; color: var(--color-primary);">Find Ratan Marble across our 3 premium locations — always closer to serve you.</p>
+        </div>
+        <div class="contact-layout">
+            <div class="contact-map">
+                <img src="images/7996f3c46d7ded628304443270946705c14085cc.png" alt="Map showing showroom locations">
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" placeholder="Sagar Kusumiwal">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="9867100225">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="ratanmarble@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <div class="select-wrapper">
+                        <select id="subject">
+                            <option>Inquiry about marble collection</option>
+                        </select>
+                        <img src="images/646_805.svg" alt="dropdown arrow" class="select-arrow">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="4" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer class="site-footer-main">
+    <div class="container footer-container">
+        <div class="footer-content">
+            <h3 class="footer-title">Ratan Marble</h3>
+            <nav class="footer-nav">
+                <a href="#home">Home</a>
+                <span>•</span>
+                <a href="#collections">Collections</a>
+                <span>•</span>
+                <a href="#about">About Us</a>
+                <span>•</span>
+                <a href="#contact">Contact Us</a>
+            </nav>
+            <div class="footer-socials">
+                <a href="#"><img src="images/646_827.svg" alt="Instagram"></a>
+                <a href="#"><img src="images/646_830.svg" alt="Facebook"></a>
+                <a href="#"><img src="images/646_832.svg" alt="WhatsApp"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Ratan Marble. All rights reserved</p>
+            <nav class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <span>•</span>
+                <a href="#">Terms of Service</a>
+            </nav>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
