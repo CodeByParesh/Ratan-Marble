@@ -145,6 +145,7 @@ a {
     font-size: 14px;
   }
 }
+
 /* CSS for section section:Heritage */
 .heritage-section {
     padding: 120px 0;
@@ -207,4 +208,108 @@ a {
   .heritage-section__content {
     padding: 48px 20px;
   }
+}
+
+/* CSS for section section:Heritage - Timeline */
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+}
+.timeline__line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: var(--color-light);
+    transform: translateX(-50%);
+}
+.timeline__item {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    margin-bottom: 50px;
+}
+.timeline__item--left {
+    left: 0;
+    text-align: right;
+}
+.timeline__item--right {
+    left: 50%;
+    text-align: left;
+}
+.timeline__dot {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 9px;
+    height: 9px;
+    background-color: var(--color-light);
+    border: 2px solid var(--color-light);
+    border-radius: 50%;
+}
+.timeline__item--left .timeline__dot {
+    right: -4.5px;
+}
+.timeline__item--right .timeline__dot {
+    left: -4.5px;
+}
+.timeline__card {
+    position: relative;
+    background-image: url('images/marble-texture.png');
+    background-size: cover;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+.timeline__card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: 1;
+}
+.timeline__card > * {
+    position: relative;
+    z-index: 2;
+}
+.timeline__card-header {
+    margin-bottom: 8px;
+}
+.timeline__year {
+    font-size: 61px;
+    line-height: 1;
+    letter-spacing: -0.61px;
+    color: var(--color-dark);
+}
+.timeline__event {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-dark);
+}
+.timeline__description {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(58, 58, 58, 0.75);
+}
+@media (max-width: 768px) {
+    .timeline__line {
+        left: 20px;
+    }
+    .timeline__item, .timeline__item--right {
+        width: 100%;
+        left: 0;
+        padding-left: 60px;
+        padding-right: 20px;
+        text-align: left;
+    }
+    .timeline__item--left .timeline__dot, .timeline__item--right .timeline__dot {
+        left: 15.5px;
+    }
+    .timeline__item--left {
+        text-align: left;
+    }
 }
