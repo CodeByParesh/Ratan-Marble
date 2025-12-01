@@ -308,17 +308,19 @@
 }
 .signature-collection-section__container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 82px;
+    gap: 40px;
 }
 .signature-collection-section__image-wrapper {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
     flex-shrink: 0;
-    width: 550px;
-    height: 700px;
 }
 .signature-collection-section__image {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 20px;
     border: 0.8px solid var(--color-primary);
@@ -327,11 +329,15 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 .signature-collection-section__header {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    align-items: center;
 }
 .signature-collection-section__tagline {
     font-size: 18px;
@@ -353,6 +359,8 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    align-items: center;
+    width: 100%;
 }
 .filter-header {
     display: flex;
@@ -367,6 +375,8 @@
 .filter-buttons {
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .filter-btn {
     padding: 4px 30px;
@@ -385,6 +395,8 @@
 .signature-collection-section__applications {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 .applications-title {
     font-size: 25px;
@@ -397,6 +409,7 @@
     margin: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .applications-list li {
     font-size: 14px;
@@ -404,27 +417,51 @@
     color: var(--color-dark);
 }
 .signature-collection-section__cta {
-    align-self: flex-start;
-    width: 100%;
+    align-self: center;
+    width: auto;
 }
-@media (max-width: 1024px) {
+
+@media (min-width: 768px) {
     .signature-collection-section__container {
-        flex-direction: column;
-        gap: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 82px;
     }
     .signature-collection-section__image-wrapper {
-        width: 100%;
-        height: 400px;
+        width: 50%;
+        height: auto;
     }
     .signature-collection-section__content {
-        align-items: center;
-        text-align: center;
+        align-items: stretch;
+        text-align: left;
+        width: 50%;
+    }
+    .signature-collection-section__header {
+        align-items: flex-start;
+        text-align: left;
+        align-self: flex-start;
     }
     .signature-collection-section__description {
         max-width: 100%;
     }
+    .signature-collection-section__filters {
+        align-items: flex-end;
+        align-self: flex-end;
+    }
+    .filter-buttons {
+        justify-content: flex-end;
+    }
+    .signature-collection-section__applications {
+        align-items: flex-end;
+        align-self: flex-end;
+        text-align: right;
+    }
+    .applications-list {
+        align-items: flex-end;
+    }
     .signature-collection-section__cta {
-        width: auto;
+        align-self: flex-end;
     }
 }
 
