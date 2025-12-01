@@ -153,13 +153,36 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .hero-section__image-wrapper {
+        height: 70vh;
+    }
+    .hero-section__title {
+        font-size: 48px;
+    }
+    .hero-section__subtitle {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-section {
         padding-top: 40px;
         padding-bottom: 40px;
     }
     .hero-section__title {
-        font-size: 42px;
+        /* font-size handled in 1024px and 480px blocks, but 42px was here before.
+           Requirement: Tablet (<=1024) 48px, Mobile (<=480) 32px.
+           Intermediate (768px) can inherit 48px or keep 42px?
+           User said: "Progressively".
+           Let's stick to the specific requirements.
+           Tablet (<=1024) = 48px.
+           So at 768px it should be 48px unless overriden.
+           Existing code had 42px.
+           I will remove the 42px override to allow 48px from 1024px to flow down,
+           or explicitly set it if needed.
+           Actually, 768px is < 1024px. So 48px applies.
+           I'll keep the line-height and other adjustments. */
         line-height: 1.2;
     }
     .hero-section__subtitle {
@@ -173,6 +196,15 @@
     }
     .hero-section__actions .btn {
         width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section__image-wrapper {
+        height: 60vh;
+    }
+    .hero-section__title {
+        font-size: 32px;
     }
 }
 
@@ -254,11 +286,19 @@
 @media (max-width: 1024px) {
     .features-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    .feature-card {
+        padding: 24px;
     }
 }
 @media (max-width: 768px) {
     .features-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .feature-card {
+        padding: 20px;
     }
 }
 
