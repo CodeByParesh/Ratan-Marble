@@ -308,17 +308,19 @@
 }
 .signature-collection-section__container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 82px;
+    gap: 40px;
 }
 .signature-collection-section__image-wrapper {
+    width: 100%;
+    max-width: 550px;
+    height: auto;
     flex-shrink: 0;
-    width: 550px;
-    height: 700px;
 }
 .signature-collection-section__image {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 20px;
     border: 0.8px solid var(--color-primary);
@@ -327,11 +329,15 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 .signature-collection-section__header {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    align-items: center;
 }
 .signature-collection-section__tagline {
     font-size: 18px;
@@ -349,12 +355,15 @@
     line-height: 24px;
     max-width: 342px;
 }
-.signature-collection-section__filters {
+.signature-bottom {
+    margin-top: 2rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
+    align-items: center;
 }
-.filter-header {
+.signature-filter {
     display: flex;
     align-items: center;
     gap: 4px;
@@ -364,9 +373,11 @@
     width: 24px;
     height: 24px;
 }
-.filter-buttons {
+.signature-filter-buttons {
     display: flex;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
 }
 .filter-btn {
     padding: 4px 30px;
@@ -382,9 +393,10 @@
     color: var(--color-light);
     border-color: var(--color-primary);
 }
-.signature-collection-section__applications {
+.signature-applications {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .applications-title {
     font-size: 25px;
@@ -397,34 +409,53 @@
     margin: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .applications-list li {
     font-size: 14px;
     line-height: 2;
     color: var(--color-dark);
 }
-.signature-collection-section__cta {
-    align-self: flex-start;
-    width: 100%;
-}
-@media (max-width: 1024px) {
+
+@media (min-width: 768px) {
     .signature-collection-section__container {
-        flex-direction: column;
-        gap: 40px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 82px;
     }
     .signature-collection-section__image-wrapper {
-        width: 100%;
-        height: 400px;
+        width: 50%;
+        height: auto;
     }
     .signature-collection-section__content {
-        align-items: center;
-        text-align: center;
+        align-items: stretch;
+        text-align: left;
+        width: 50%;
+    }
+    .signature-collection-section__header {
+        align-items: flex-start;
+        text-align: left;
+        align-self: flex-start;
     }
     .signature-collection-section__description {
         max-width: 100%;
     }
-    .signature-collection-section__cta {
-        width: auto;
+    .signature-bottom {
+        align-items: flex-end;
+        text-align: right;
+    }
+    .signature-filter-buttons {
+        justify-content: flex-end;
+    }
+    .signature-cta {
+        align-self: flex-end;
+    }
+    .signature-applications {
+        align-items: flex-end;
+    }
+    .applications-list {
+        align-items: flex-end;
     }
 }
 
@@ -1264,26 +1295,28 @@
                 <h2 class="signature-collection-section__title">Stone is Our Language</h2>
                 <p class="signature-collection-section__description">More than material, our stone tells a story of nature's art refined by three generations of expertise.</p>
             </div>
-            <div class="signature-collection-section__filters">
-                <div class="filter-header">
+            <div class="signature-bottom">
+                <div class="signature-filter">
                     <img src="assets/icons/filter.svg" alt="Filter icon" class="filter-icon">
                     <span>Filter by:</span>
                 </div>
-                <div class="filter-buttons">
+                <div class="signature-filter-buttons">
                     <button class="filter-btn filter-btn--active">Granite</button>
                     <button class="filter-btn">Quartzite</button>
                     <button class="filter-btn">Premium</button>
                 </div>
+                <div class="signature-applications">
+                    <h3 class="applications-title">Perfect Applications:</h3>
+                    <ul class="applications-list">
+                        <li>+ Counter top</li>
+                        <li>+ Luxury Halls</li>
+                        <li>+ Staircases</li>
+                    </ul>
+                </div>
+                <div class="signature-cta">
+                    <a href="#" class="btn btn-primary">View Full Collections</a>
+                </div>
             </div>
-            <div class="signature-collection-section__applications">
-                <h3 class="applications-title">Perfect Applications:</h3>
-                <ul class="applications-list">
-                    <li>+ Counter top</li>
-                    <li>+ Luxury Halls</li>
-                    <li>+ Staircases</li>
-                </ul>
-            </div>
-            <a href="#" class="btn btn-primary signature-collection-section__cta">View Full Collections</a>
         </div>
     </div>
 </section>
