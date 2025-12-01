@@ -104,14 +104,14 @@
     height: 100%;
     object-fit: cover;
 }
-.hero-section__image-overlay {
+.hero-section__video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 50px;
+    object-fit: cover; /* ensures video covers full width & height */
+    z-index: 0;
 }
 .hero-section__content {
     display: flex;
@@ -210,7 +210,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/4903f689e0eb6bb571627dfdaf1a3539a820bef0.png');
+    background-image: url('assets/images/marble-texture-bg-2.png');
     background-size: cover;
     z-index: -2;
 }
@@ -403,7 +403,7 @@
     z-index: -1;
 }
 .cta-section--1 .cta-section__bg {
-    background-image: url('images/f6273b3b26c67d716db53c020871886ec867f22b.png');
+    background-image: url('assets/images/marble-texture-bg-3.png');
     background-size: cover;
     background-position: center;
 }
@@ -683,7 +683,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/21d8f8e887ab587134bea982e899920a372dd3aa.png');
+    background-image: url('assets/images/marble-texture-bg-4.png');
     background-size: cover;
     z-index: -2;
 }
@@ -766,7 +766,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/213e02d46d976d0d24afdf68f219f57cc3311e3e.png');
+    background-image: url('assets/images/marble-texture-bg-5.png');
     background-size: cover;
     background-position: center;
 }
@@ -829,7 +829,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('images/4903f689e0eb6bb571627dfdaf1a3539a820bef0.png');
+    background-image: url('assets/images/marble-texture-bg-2.png');
     background-size: cover;
     z-index: -2;
 }
@@ -888,7 +888,7 @@
     padding: 64px 0;
 }
 .cta-section--2 .cta-section__bg {
-    background-image: url('images/3703ee2991f7b946d5c3c7e46975f14ca4140ce1.png');
+    background-image: url('assets/images/marble-texture-bg-2.png');
     background-size: cover;
     background-position: center;
 }
@@ -902,7 +902,7 @@
     background-color: rgba(255, 255, 255, 0.45);
 }
 .cta-section--2 .cta-section__title {
-    color: var(--color-light);
+    color: var(--color-dark);
 }
 .cta-section--2 .cta-section__description {
     color: var(--color-light);
@@ -1067,7 +1067,7 @@
 <header class="site-header">
     <div class="site-header__container">
         <a href="#" class="site-header__logo">
-            <img src="images/a80a028de629e57785a67101ee4813eed5070f7a.png" alt="Ratan Marbe Logo" class="site-header__logo-img">
+            <img src="assets/logo/ratan-marble-logo.png" alt="Ratan Marbe Logo" class="site-header__logo-img">
             <span class="site-header__logo-text">Ratan Marble</span>
         </a>
         <nav class="site-header__nav">
@@ -1084,9 +1084,11 @@
 <section id="home" class="hero-section">
     <div class="container">
         <div class="hero-section__image-wrapper">
-            <img src="images/0065c5b2f382dc87fd9eb973b74081fa52c05378.png" alt="Stone Collection" class="hero-section__image">
-            <div class="hero-section__image-overlay"></div>
-        </div>
+    <video class="hero-section__video" autoplay muted loop playsinline>
+        <source src="assets/video/simple-video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-section__image-overlay"></div>
+</div>
         <div class="hero-section__content">
             <h1 class="hero-section__title">Premium Granite And Quartzite, Trusted Since 1997</h1>
             <p class="hero-section__subtitle">Over 20 years of expertise, imported marble, exotic quartzite, and custom stone solutions for every project.</p>
@@ -1102,7 +1104,7 @@
         <div class="heritage-section__frame">
             <div class="heritage-section__bg-container">
                 <!-- merged image -->
-                <img src="images/3e783eb8a297dcd3c76648b03471caccaa2b7dca.png" alt="Quarry background" class="heritage-section__bg-image">
+                <img src="assets/images/marble-mountain-texture-bg.png" alt="Quarry background" class="heritage-section__bg-image">
                 <div class="heritage-section__bg-overlay"></div>
             </div>
             <div class="heritage-section__content">
@@ -1168,42 +1170,42 @@
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-card__icon-wrapper">
-                    <img src="images/646_445.svg" alt="Architects Choice Icon">
+                    <img src="assets/icons/multi-user.svg" alt="Architects Choice Icon">
                 </div>
                 <h3 class="feature-card__title">Architects And Interior Choice</h3>
                 <p class="feature-card__description">The preferred choice for architects and designers , delivering a premium selection for projects of any scale.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-card__icon-wrapper">
-                    <img src="images/646_460.svg" alt="Wide Range Icon">
+                    <img src="assets/icons/cards.svg" alt="Wide Range Icon">
                 </div>
                 <h3 class="feature-card__title">Wide Range Of Premium Stones</h3>
                 <p class="feature-card__description">Choose from Granite, Imported Marble, and Exotic Quartzite — curated for elegance and durability.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-card__icon-wrapper">
-                    <img src="images/646_472.svg" alt="Trusted Since 1997 Icon">
+                    <img src="assets/icons/clock.svg" alt="Trusted Since 1997 Icon">
                 </div>
                 <h3 class="feature-card__title">Trusted Since 1997</h3>
                 <p class="feature-card__description">Over 28 years of trusted service, delivering premium quality and craftsmanship for every project.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-card__icon-wrapper">
-                    <img src="images/646_484.svg" alt="Custom Finishing Icon">
+                    <img src="assets/icons/tools.svg" alt="Custom Finishing Icon">
                 </div>
                 <h3 class="feature-card__title">Custom Finishing And Polishing</h3>
                 <p class="feature-card__description">Tailored cutting, polishing, and edge finishing services to ensure your stone fits perfectly into your project.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-card__icon-wrapper">
-                    <img src="images/646_495.svg" alt="Exotic Collection Icon">
+                    <img src="assets/icons/earth.svg" alt="Exotic Collection Icon">
                 </div>
                 <h3 class="feature-card__title">Imported And Exotic Collection</h3>
                 <p class="feature-card__description">Sourced from the finest quarries worldwide, our collections offer unparalleled beauty, quality, and exclusivity.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-card__icon-wrapper">
-                    <img src="images/646_506.svg" alt="Customer Service Icon">
+                    <img src="assets/icons/handshake.svg" alt="Customer Service Icon">
                 </div>
                 <h3 class="feature-card__title">Customer-Centric Service</h3>
                 <p class="feature-card__description">A personalized experience from initial selection to timely and safe delivery, ensuring your project's success.</p>
@@ -1214,7 +1216,7 @@
 <section id="collections" class="signature-collection-section">
     <div class="container signature-collection-section__container">
         <div class="signature-collection-section__image-wrapper">
-            <img src="images/21d8f8e887ab587134bea982e899920a372dd3aa.png" alt="Signature Collection Marble" class="signature-collection-section__image">
+            <img src="assets/images/marble-texture.jpg" alt="Signature Collection Marble" class="signature-collection-section__image">
         </div>
         <div class="signature-collection-section__content">
             <div class="signature-collection-section__header">
@@ -1224,7 +1226,7 @@
             </div>
             <div class="signature-collection-section__filters">
                 <div class="filter-header">
-                    <img src="images/646_524.svg" alt="Filter icon" class="filter-icon">
+                    <img src="assets/icons/filter.svg" alt="Filter icon" class="filter-icon">
                     <span>Filter by:</span>
                 </div>
                 <div class="filter-buttons">
@@ -1289,17 +1291,17 @@
             <details class="accordion__item" open>
                 <summary class="accordion__summary">
                     <div class="accordion__summary-content">
-                        <img src="images/646_590.svg" alt="Location icon">
+                        <img src="assets/icons/location.svg" alt="Location icon">
                         <div>
                             <h3 class="accordion__title">Ratan Marble – Flagship Showroom</h3>
                             <p class="accordion__location">Dahisar East</p>
                         </div>
                     </div>
-                    <img src="images/646_587.svg" alt="Toggle icon" class="accordion__toggle-icon">
+                    <img src="assets/icons/toggle.svg" alt="Toggle icon" class="accordion__toggle-icon">
                 </summary>
                 <div class="accordion__details">
                     <div class="accordion__details-image-wrapper">
-                        <img src="images/0a860f3db9b3efe7327c1c862adb1debe8edc010.png" alt="Ratan Marble – Flagship Showroom exterior">
+                        <img src="assets/images/simple-image.png" alt="Ratan Marble – Flagship Showroom exterior">
                     </div>
                     <div class="accordion__details-info">
                         <div class="info-group">
@@ -1329,13 +1331,13 @@
             <details class="accordion__item">
                 <summary class="accordion__summary">
                     <div class="accordion__summary-content">
-                        <img src="images/646_627.svg" alt="Location icon">
+                        <img src="assets/icons/location.svg" alt="Location icon">
                         <div>
                             <h3 class="accordion__title">Sagar Marble And Granite</h3>
                             <p class="accordion__location">Dahisar East</p>
                         </div>
                     </div>
-                    <img src="images/646_634.svg" alt="Toggle icon" class="accordion__toggle-icon">
+                    <img src="assets/icons/plus.svg" alt="Toggle icon" class="accordion__toggle-icon">
                 </summary>
                 <div class="accordion__details">
                     <p>Details for Sagar Marble And Granite.</p>
@@ -1344,13 +1346,13 @@
             <details class="accordion__item">
                 <summary class="accordion__summary">
                     <div class="accordion__summary-content">
-                        <img src="images/646_639.svg" alt="Location icon">
+                        <img src="assets/icons/location.svg" alt="Location icon">
                         <div>
                             <h3 class="accordion__title">Shri Ram Granite Works</h3>
                             <p class="accordion__location">Thane</p>
                         </div>
                     </div>
-                    <img src="images/646_646.svg" alt="Toggle icon" class="accordion__toggle-icon">
+                    <img src="assets/icons/plus.svg" alt="Toggle icon" class="accordion__toggle-icon">
                 </summary>
                 <div class="accordion__details">
                     <p>Details for Shri Ram Granite Works.</p>
@@ -1368,7 +1370,7 @@
         <div class="testimonials-grid">
             <div class="testimonial-card">
                 <div class="testimonial-card__stars">
-                    <img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star">
+                    <img src="assets/icons/star.svg" alt="star"><img src="assets/icons/star.svg" alt="star"><img src="assets/icons/star.svg" alt="star"><img src="assets/icons/star.svg" alt="star"><img src="assets/icons/star.svg" alt="star">
                 </div>
                 <p class="testimonial-card__text">I was looking for premium granite for my new kitchen and visited Ratan Marble. The collection was huge, and the staff patiently guided me in choosing the right slab. Prices were also reasonable compared to other shops. Very satisfied with the service.</p>
                 <div class="testimonial-card__author">
@@ -1378,7 +1380,7 @@
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-card__stars">
-                    <img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star">
+                    <img src="assets/icons/star.svg" alt="star"><img src="assets/icons/star.svg" alt="star"><img src="assets/icons/star.svg" alt="star"><img src="assets/icons/star.svg" alt="star"><img src="assets/icons/star.svg" alt="star">
                 </div>
                 <p class="testimonial-card__text">The team at Ratan Marble was incredibly patient, helping me find the perfect granite for my kitchen. The quality is outstanding, and their guidance made the entire process stress-free. The final result has completely transformed my home. Highly recommended!</p>
                 <div class="testimonial-card__author">
@@ -1388,7 +1390,7 @@
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-card__stars">
-                    <img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star"><img src="images/star.svg" alt="star">
+                    <img src="assets/icons/star.svg" alt="star"><img src="assets/icons/star.svg" alt="star"><img src="assets/icons/star.svg" alt="star"><img src="assets/icons/star.svg" alt="star"><img src="assets/icons/star.svg" alt="star">
                 </div>
                 <p class="testimonial-card__text">The collection is huge! I had so many different options to choose from, far more than other shops. Finally found a unique quartzite slab that I couldn't find anywhere else in the city.</p>
                 <div class="testimonial-card__author">
@@ -1398,7 +1400,7 @@
             </div>
         </div>
         <div class="testimonials-nav">
-            <img src="images/646_708.svg" alt="navigation dots">
+            <img src="assets/icons/navigation-dots.svg" alt="navigation dots">
         </div>
     </div>
 </section>
@@ -1421,7 +1423,7 @@
             <details class="faq-item" open>
                 <summary class="faq-summary">
                     Do you provide polishing and custom cutting services?
-                    <img src="images/646_730.svg" alt="toggle icon" class="faq-toggle-icon">
+                    <img src="assets/icons/down-arrow.svg" alt="toggle icon" class="faq-toggle-icon">
                 </summary>
                 <div class="faq-content">
                     <p>Absolutely. We offer polishing, edge finishing, and custom cutting as per your requirements to ensure the stone fits perfectly in your project.</p>
@@ -1430,7 +1432,7 @@
             <details class="faq-item">
                 <summary class="faq-summary">
                     What types of granite and marble do you offer?
-                    <img src="images/646_739.svg" alt="toggle icon" class="faq-toggle-icon">
+                    <img src="assets/icons/down-arrow.svg" alt="toggle icon" class="faq-toggle-icon">
                 </summary>
                 <div class="faq-content">
                     <p>We offer a wide variety of both local and imported granite and marble, including exotic quartzite. Visit our collections page or showroom to see the full range.</p>
@@ -1439,7 +1441,7 @@
             <details class="faq-item">
                 <summary class="faq-summary">
                     Do you sell only in bulk, or can I buy small quantities too?
-                    <img src="images/646_746.svg" alt="toggle icon" class="faq-toggle-icon">
+                    <img src="assets/icons/down-arrow.svg" alt="toggle icon" class="faq-toggle-icon">
                 </summary>
                 <div class="faq-content">
                     <p>We cater to all project sizes, from large-scale architectural projects to individual home renovations. You can purchase single slabs or in bulk.</p>
@@ -1448,7 +1450,7 @@
             <details class="faq-item">
                 <summary class="faq-summary">
                     Why should I choose Ratan Marble over others?
-                    <img src="images/646_753.svg" alt="toggle icon" class="faq-toggle-icon">
+                    <img src="assets/icons/down-arrow.svg" alt="toggle icon" class="faq-toggle-icon">
                 </summary>
                 <div class="faq-content">
                     <p>With over 28 years of experience, a vast collection of premium stones, and a commitment to customer satisfaction, we provide unmatched quality and service.</p>
@@ -1457,7 +1459,7 @@
             <details class="faq-item">
                 <summary class="faq-summary">
                     Are your prices competitive?
-                    <img src="images/646_760.svg" alt="toggle icon" class="faq-toggle-icon">
+                    <img src="assets/icons/down-arrow.svg" alt="toggle icon" class="faq-toggle-icon">
                 </summary>
                 <div class="faq-content">
                     <p>Yes, we pride ourselves on offering competitive pricing for premium quality stones by sourcing directly from quarries around the world.</p>
@@ -1466,7 +1468,7 @@
             <details class="faq-item">
                 <summary class="faq-summary">
                     How long does delivery take?
-                    <img src="images/646_767.svg" alt="toggle icon" class="faq-toggle-icon">
+                    <img src="assets/icons/down-arrow.svg" alt="toggle icon" class="faq-toggle-icon">
                 </summary>
                 <div class="faq-content">
                     <p>Delivery times vary based on your location and the specifics of your order. We strive to provide timely and safe delivery for all our clients.</p>
@@ -1480,8 +1482,8 @@
         <!-- merged image -->
     </div>
     <div class="container cta-section__container">
-        <h2 class="cta-section__title" style="color: var(--color-light);">Didn't Find Your Answer?</h2>
-        <p class="cta-section__description" style="color: var(--color-light);">Our granite, marble & quartzite experts are here to guide you. Get the right stone for your project.</p>
+        <h2 class="cta-section__title" style="color: var(--color-dark);">Didn't Find Your Answer?</h2>
+        <p class="cta-section__description" style="color: var(--color-dark);">Our granite, marble & quartzite experts are here to guide you. Get the right stone for your project.</p>
         <div class="cta-section__actions">
             <a href="#" class="btn btn-primary" style="padding: 10px 32px;">Get Expert Guidance</a>
         </div>
@@ -1490,12 +1492,12 @@
 <section id="contact" class="contact-section">
     <div class="container">
         <div style="display: flex; flex-direction: column; align-items: center; gap: 4px; margin-bottom: 64px;">
-            <h2 class="section-title" style="font-size: 61px; color: var(--color-primary);">Visit Us at Our Showrooms</h2>
-            <p class="section-description" style="font-size: 18px; color: var(--color-primary);">Find Ratan Marble across our 3 premium locations — always closer to serve you.</p>
+            <h2 class="section-title" style="font-size: 61px; color: var(--color-dark);">Visit Us at Our Showrooms</h2>
+            <p class="section-description" style="font-size: 18px; color: var(--color-dark);">Find Ratan Marble across our 3 premium locations — always closer to serve you.</p>
         </div>
         <div class="contact-layout">
             <div class="contact-map">
-                <img src="images/7996f3c46d7ded628304443270946705c14085cc.png" alt="Map showing showroom locations">
+                <img src="assets/images/map.png" alt="Map showing showroom locations">
             </div>
             <form class="contact-form">
                 <div class="form-group">
@@ -1516,7 +1518,7 @@
                         <select id="subject">
                             <option>Inquiry about marble collection</option>
                         </select>
-                        <img src="images/646_805.svg" alt="dropdown arrow" class="select-arrow">
+                        <img src="assets/icons/down-arrow.svg" alt="dropdown arrow" class="select-arrow">
                     </div>
                 </div>
                 <div class="form-group">
@@ -1542,9 +1544,9 @@
                 <a href="#contact">Contact Us</a>
             </nav>
             <div class="footer-socials">
-                <a href="#"><img src="images/646_827.svg" alt="Instagram"></a>
-                <a href="#"><img src="images/646_830.svg" alt="Facebook"></a>
-                <a href="#"><img src="images/646_832.svg" alt="WhatsApp"></a>
+                <a href="#"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="assets/icons/whatsapp.svg" alt="WhatsApp"></a>
             </div>
         </div>
         <div class="footer-bottom">

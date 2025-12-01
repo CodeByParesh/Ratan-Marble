@@ -258,7 +258,7 @@ a {
 }
 .timeline__card {
     position: relative;
-    background-image: url('images/marble-texture.png');
+    background-image: url('assets/images/marble-texture-bg-1.png');
     background-size: cover;
     padding: 20px;
     border-radius: 20px;
