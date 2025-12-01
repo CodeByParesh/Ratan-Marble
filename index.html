@@ -314,7 +314,9 @@
 }
 .signature-collection-section__image-wrapper {
     width: 100%;
+    max-width: 550px;
     height: auto;
+    flex-shrink: 0;
 }
 .signature-collection-section__image {
     width: 100%;
@@ -357,8 +359,8 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 100%;
     align-items: center;
+    width: 100%;
 }
 .filter-header {
     display: flex;
@@ -373,7 +375,7 @@
 }
 .filter-buttons {
     display: flex;
-    gap: 12px;
+    gap: 16px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -395,6 +397,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .applications-title {
     font-size: 25px;
@@ -420,31 +423,25 @@
 }
 
 @media (min-width: 768px) {
-    .signature-collection-section {
-        padding: 128px 0;
-    }
     .signature-collection-section__container {
         flex-direction: row;
-        align-items: flex-start;
         justify-content: space-between;
-        gap: 60px;
+        align-items: center;
+        gap: 82px;
     }
     .signature-collection-section__image-wrapper {
         width: 50%;
-        flex: 1;
+        height: auto;
     }
     .signature-collection-section__content {
-        width: 50%;
-        flex: 1;
-        align-items: flex-start;
+        align-items: stretch;
         text-align: left;
+        width: 50%;
     }
     .signature-collection-section__header {
         align-items: flex-start;
-    }
-    .signature-collection-section__title {
-        font-size: 39px;
-        line-height: 48px;
+        text-align: left;
+        align-self: flex-start;
     }
     .signature-collection-section__description {
         max-width: 400px;
@@ -464,8 +461,23 @@
     .applications-list {
         align-items: flex-start;
     }
+    .signature-collection-section__filters {
+        align-items: flex-end;
+        align-self: flex-end;
+    }
+    .filter-buttons {
+        justify-content: flex-end;
+    }
+    .signature-collection-section__applications {
+        align-items: flex-end;
+        align-self: flex-end;
+        text-align: right;
+    }
+    .applications-list {
+        align-items: flex-end;
+    }
     .signature-collection-section__cta {
-        align-self: flex-start;
+        align-self: flex-end;
     }
 }
 
