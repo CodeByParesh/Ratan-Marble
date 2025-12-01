@@ -176,136 +176,6 @@
     }
 }
 
-/* CSS for section section:Heritage */
-.heritage-section {
-    position: relative;
-    padding: 100px 0;
-    overflow: hidden;
-}
-.heritage-section__bg-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    border-radius: 85px;
-}
-.heritage-section__bg-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.heritage-section__bg-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(58, 58, 58, 0.6);
-}
-.heritage-section__content {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 64px;
-}
-.heritage-section__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    max-width: 824px;
-}
-.timeline {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: 50px auto;
-}
-.timeline__line {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background-color: var(--color-light);
-    transform: translateX(-50%);
-}
-.timeline__item {
-    position: relative;
-    width: 50%;
-    padding: 20px 40px;
-    margin-bottom: 50px;
-}
-.timeline__item--left {
-    left: 0;
-    text-align: right;
-}
-.timeline__item--right {
-    left: 50%;
-    text-align: left;
-}
-.timeline__dot {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 9px;
-    height: 9px;
-    background-color: var(--color-light);
-    border: 2px solid var(--color-light);
-    border-radius: 50%;
-}
-.timeline__item--left .timeline__dot {
-    right: -4.5px;
-}
-.timeline__item--right .timeline__dot {
-    left: -4.5px;
-}
-.timeline__card {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 20px;
-    border-radius: 20px;
-}
-.timeline__card-header {
-    margin-bottom: 8px;
-}
-.timeline__year {
-    font-size: 61px;
-    line-height: 1;
-    letter-spacing: -0.61px;
-    color: var(--color-dark);
-}
-.timeline__event {
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--color-dark);
-}
-.timeline__description {
-    font-size: 14px;
-    line-height: 1.7;
-    color: rgba(58, 58, 58, 0.75);
-}
-@media (max-width: 768px) {
-    .timeline__line {
-        left: 20px;
-    }
-    .timeline__item, .timeline__item--right {
-        width: 100%;
-        left: 0;
-        padding-left: 60px;
-        padding-right: 20px;
-        text-align: left;
-    }
-    .timeline__item--left .timeline__dot, .timeline__item--right .timeline__dot {
-        left: 15.5px;
-    }
-    .timeline__item--left {
-        text-align: left;
-    }
-}
 
 /* CSS for section section:WhyChooseUs */
 .why-choose-us-section {
@@ -1228,58 +1098,62 @@
     </div>
 </section>
 <section id="about" class="heritage-section">
-    <div class="heritage-section__bg-container">
-        <!-- merged image -->
-        <img src="images/3e783eb8a297dcd3c76648b03471caccaa2b7dca.png" alt="Quarry background" class="heritage-section__bg-image">
-        <div class="heritage-section__bg-overlay"></div>
-    </div>
-    <div class="container heritage-section__content">
-        <div class="heritage-section__header">
-            <span class="section-subtitle section-subtitle--light">Our Heritage</span>
-            <h2 class="section-title" style="color: var(--color-light);">Two Decades Of Crafted Excellence</h2>
-            <p class="section-description" style="color: var(--color-light);">From a single showroom to three specialized branches, our story is carved in stone — literally. Each milestone represents our commitment to quality, trust, and timeless beauty.</p>
-        </div>
-        <div class="timeline">
-            <div class="timeline__line"></div>
-            <div class="timeline__item timeline__item--left">
-                <div class="timeline__card">
-                    <div class="timeline__card-header">
-                        <h3 class="timeline__year">1997</h3>
-                        <p class="timeline__event">Ratan Marble founded</p>
-                    </div>
-                    <p class="timeline__description">Ratan Marble was established with a single showroom, offering premium quality granite and marble.</p>
-                </div>
-                <div class="timeline__dot"></div>
+    <div class="container">
+        <div class="heritage-section__frame">
+            <div class="heritage-section__bg-container">
+                <!-- merged image -->
+                <img src="images/3e783eb8a297dcd3c76648b03471caccaa2b7dca.png" alt="Quarry background" class="heritage-section__bg-image">
+                <div class="heritage-section__bg-overlay"></div>
             </div>
-            <div class="timeline__item timeline__item--right">
-                <div class="timeline__card">
-                    <div class="timeline__card-header">
-                        <h3 class="timeline__year">2008</h3>
-                        <p class="timeline__event">Shree Ram Granite</p>
-                    </div>
-                    <p class="timeline__description">Opened two specialized branches, making our heritage and craftsmanship more accessible.</p>
+            <div class="heritage-section__content">
+                <div class="heritage-section__header">
+                    <span class="section-subtitle section-subtitle--light">Our Heritage</span>
+                    <h2 class="section-title">Two Decades Of Crafted Excellence</h2>
+                    <p class="section-description">From a single showroom to three specialized branches, our story is carved in stone — literally. Each milestone represents our commitment to quality, trust, and timeless beauty.</p>
                 </div>
-                <div class="timeline__dot"></div>
-            </div>
-            <div class="timeline__item timeline__item--left">
-                <div class="timeline__card">
-                    <div class="timeline__card-header">
-                        <h3 class="timeline__year">2014</h3>
-                        <p class="timeline__event">Ratan Marble founded</p>
+                <div class="timeline">
+                    <div class="timeline__line"></div>
+                    <div class="timeline__item timeline__item--left">
+                        <div class="timeline__card">
+                            <div class="timeline__card-header">
+                                <h3 class="timeline__year">1997</h3>
+                                <p class="timeline__event">Ratan Marble founded</p>
+                            </div>
+                            <p class="timeline__description">Ratan Marble was established with a single showroom, offering premium quality granite and marble.</p>
+                        </div>
+                        <div class="timeline__dot"></div>
                     </div>
-                    <p class="timeline__description">Ratan Marble was established with a single showroom, offering premium quality granite and marble.</p>
-                </div>
-                <div class="timeline__dot"></div>
-            </div>
-            <div class="timeline__item timeline__item--right">
-                <div class="timeline__card">
-                    <div class="timeline__card-header">
-                        <h3 class="timeline__year">2025</h3>
-                        <p class="timeline__event">Future Expanding</p>
+                    <div class="timeline__item timeline__item--right">
+                        <div class="timeline__card">
+                            <div class="timeline__card-header">
+                                <h3 class="timeline__year">2008</h3>
+                                <p class="timeline__event">Shree Ram Granite</p>
+                            </div>
+                            <p class="timeline__description">Opened two specialized branches, making our heritage and craftsmanship more accessible.</p>
+                        </div>
+                        <div class="timeline__dot"></div>
                     </div>
-                    <p class="timeline__description">Stepping into the future with a premium online presence, showcasing timeless beauty worldwide.</p>
+                    <div class="timeline__item timeline__item--left">
+                        <div class="timeline__card">
+                            <div class="timeline__card-header">
+                                <h3 class="timeline__year">2014</h3>
+                                <p class="timeline__event">Ratan Marble founded</p>
+                            </div>
+                            <p class="timeline__description">Ratan Marble was established with a single showroom, offering premium quality granite and marble.</p>
+                        </div>
+                        <div class="timeline__dot"></div>
+                    </div>
+                    <div class="timeline__item timeline__item--right">
+                        <div class="timeline__card">
+                            <div class="timeline__card-header">
+                                <h3 class="timeline__year">2025</h3>
+                                <p class="timeline__event">Future Expanding</p>
+                            </div>
+                            <p class="timeline__description">Stepping into the future with a premium online presence, showcasing timeless beauty worldwide.</p>
+                        </div>
+                        <div class="timeline__dot"></div>
+                    </div>
                 </div>
-                <div class="timeline__dot"></div>
             </div>
         </div>
     </div>
