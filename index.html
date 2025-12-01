@@ -304,21 +304,21 @@
 
 /* CSS for section section:SignatureCollection */
 .signature-collection-section {
-    padding: 128px 0;
+    padding: 64px 0;
 }
 .signature-collection-section__container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 82px;
+    gap: 40px;
 }
 .signature-collection-section__image-wrapper {
-    flex-shrink: 0;
-    width: 550px;
-    height: 700px;
+    width: 100%;
+    height: auto;
 }
 .signature-collection-section__image {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 20px;
     border: 0.8px solid var(--color-primary);
@@ -327,11 +327,15 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
 .signature-collection-section__header {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    align-items: center;
 }
 .signature-collection-section__tagline {
     font-size: 18px;
@@ -340,23 +344,26 @@
     color: var(--color-primary);
 }
 .signature-collection-section__title {
-    font-size: 39px;
-    line-height: 48px;
+    font-size: 32px;
+    line-height: 1.2;
     letter-spacing: -0.39px;
 }
 .signature-collection-section__description {
     font-size: 16px;
     line-height: 24px;
-    max-width: 342px;
+    max-width: 100%;
 }
 .signature-collection-section__filters {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 100%;
+    align-items: center;
 }
 .filter-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 4px;
     font-size: 14px;
 }
@@ -366,10 +373,12 @@
 }
 .filter-buttons {
     display: flex;
-    gap: 16px;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .filter-btn {
-    padding: 4px 30px;
+    padding: 8px 24px;
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
@@ -385,6 +394,7 @@
 .signature-collection-section__applications {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .applications-title {
     font-size: 25px;
@@ -397,6 +407,7 @@
     margin: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .applications-list li {
     font-size: 14px;
@@ -404,27 +415,57 @@
     color: var(--color-dark);
 }
 .signature-collection-section__cta {
-    align-self: flex-start;
-    width: 100%;
+    align-self: center;
+    width: auto;
 }
-@media (max-width: 1024px) {
+
+@media (min-width: 768px) {
+    .signature-collection-section {
+        padding: 128px 0;
+    }
     .signature-collection-section__container {
-        flex-direction: column;
-        gap: 40px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 60px;
     }
     .signature-collection-section__image-wrapper {
-        width: 100%;
-        height: 400px;
+        width: 50%;
+        flex: 1;
     }
     .signature-collection-section__content {
-        align-items: center;
-        text-align: center;
+        width: 50%;
+        flex: 1;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .signature-collection-section__header {
+        align-items: flex-start;
+    }
+    .signature-collection-section__title {
+        font-size: 39px;
+        line-height: 48px;
     }
     .signature-collection-section__description {
-        max-width: 100%;
+        max-width: 400px;
+    }
+    .signature-collection-section__filters {
+        align-items: flex-start;
+    }
+    .filter-header {
+        justify-content: flex-start;
+    }
+    .filter-buttons {
+        justify-content: flex-start;
+    }
+    .signature-collection-section__applications {
+        align-items: flex-start;
+    }
+    .applications-list {
+        align-items: flex-start;
     }
     .signature-collection-section__cta {
-        width: auto;
+        align-self: flex-start;
     }
 }
 
