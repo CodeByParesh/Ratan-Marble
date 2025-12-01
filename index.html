@@ -304,7 +304,7 @@
 
 /* CSS for section section:SignatureCollection */
 .signature-collection-section {
-    padding: 128px 0;
+    padding: 64px 0;
 }
 .signature-collection-section__container {
     display: flex;
@@ -346,14 +346,14 @@
     color: var(--color-primary);
 }
 .signature-collection-section__title {
-    font-size: 39px;
-    line-height: 48px;
+    font-size: 32px;
+    line-height: 1.2;
     letter-spacing: -0.39px;
 }
 .signature-collection-section__description {
     font-size: 16px;
     line-height: 24px;
-    max-width: 342px;
+    max-width: 100%;
 }
 .signature-collection-section__filters {
     display: flex;
@@ -365,6 +365,7 @@
 .filter-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 4px;
     font-size: 14px;
 }
@@ -379,7 +380,7 @@
     justify-content: center;
 }
 .filter-btn {
-    padding: 4px 30px;
+    padding: 8px 24px;
     border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
@@ -443,7 +444,22 @@
         align-self: flex-start;
     }
     .signature-collection-section__description {
-        max-width: 100%;
+        max-width: 400px;
+    }
+    .signature-collection-section__filters {
+        align-items: flex-start;
+    }
+    .filter-header {
+        justify-content: flex-start;
+    }
+    .filter-buttons {
+        justify-content: flex-start;
+    }
+    .signature-collection-section__applications {
+        align-items: flex-start;
+    }
+    .applications-list {
+        align-items: flex-start;
     }
     .signature-collection-section__filters {
         align-items: flex-end;
